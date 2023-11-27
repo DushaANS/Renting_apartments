@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="sdacha_kvartir.Output"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:sdacha_kvartir"
+             mc:Ignorable="d" 
+             Height="100" Width="650">
+    <Grid>
+        <Border Background="White" VerticalAlignment="Center"  CornerRadius="10" Height="90" Visibility="Visible" Grid.Column="0" Margin="10,0,10,0">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" Color="Black" ShadowDepth="0">
+                </DropShadowEffect>
+            </Border.Effect>
+        </Border>
+
+        <Label Content="INN" x:Name="INN" Margin="32,22,565,56" RenderTransformOrigin="0.517,0.532" />
+        <Label Content="developer" x:Name="developer" Margin="124,19,414,53" RenderTransformOrigin="0.517,0.532" />
+        <Button x:Name="see_flats" Content="Посмотреть дома" Margin="42,47,370,21" Click="see_flats_Click"/>
+    </Grid>
+</UserControl>

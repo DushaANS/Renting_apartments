@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="sdacha_kvartir.Floor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:sdacha_kvartir"
+             mc:Ignorable="d" 
+              d:DesignHeight="200" Width="800">
+    <Grid>
+        <Border Background="White" VerticalAlignment="Center"  CornerRadius="10" Height="180" Visibility="Visible" Grid.Column="0" Margin="5,5,5,5">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" Color="Black" ShadowDepth="0">
+                </DropShadowEffect>
+            </Border.Effect>
+        </Border>
+        <Label x:Name="etag" Content="этаж" Margin="57,26,680,144" Height="30"/>
+        <Label Content="этаж" Margin="23,26,743,144" Height="30"/>
+        <ScrollViewer>
+            <WrapPanel x:Name="floot" Margin="20,50,0,20"/>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
